@@ -32,8 +32,8 @@ public:
             current_size--;
             top--;
 
-            T poppedElement = *top;
-            return poppedElement;
+            T popped_element = *top;
+            return popped_element;
         } else {
             throw std::out_of_range("stack is empty");
         }
@@ -42,9 +42,9 @@ public:
     T peek() {
         if (!is_empty()) {
             top--;
-            T poppedElement = *top;
+            T peeked_element = *top;
             top++;
-            return poppedElement;
+            return peeked_element;
         } else {
             throw std::out_of_range("stack is empty");
         }
